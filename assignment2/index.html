@@ -2,17 +2,18 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width-device-width" initial-scale=1.0>
+        <meta name="viewport" content="width=device-width" initial-scale=1.0>
         <title>Alt Events</title>
         <link rel="stylesheet" href="assets/stylesheets/style.css">
         <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     </head>
     <body>
         <header class="header">
-            <div class="container-1">
+            <div class="header-cn">
                 <a class="logo" href="#">Alt Events</a>
+                <label for="toggle"><i class="fa fa-bars" aria-hidden="true"></i></label>
+                <input class="toggle" id="toggle" type="checkbox">
                 <nav class="nav-bar">
                     <ul class="nav-items">
                         <li><a href="#">Home</a></li>
@@ -25,8 +26,8 @@
             </div>
         </header>
         <main>
-            <section class="container-2">
-                <div class="banner">
+            <section class="banner-cn ">
+                <div class="banner flex-common">
                     <div class="bn-col-1">
                         <h1>Web Developer Conference<span>2020</span></h1>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae excepturi consequatur facere id maxime dolore, maiores quasi, quis quos rem, sed culpa! Quisquam voluptatem nulla minima unde, exercitationem quasi animi.</p>
@@ -36,11 +37,8 @@
                         <img src="assets/media/02.png" alt="singer singing image">
                     </div>
                 </div>
-                <figure class="cn2-img">
-                    
-                </figure>
             </section>
-            <section class="container-3">
+            <section class="abt-event flex-common">
                 <div class="cn3-col cn3-col-1">
                     <img src="assets/media/03.png">
                 </div>
@@ -50,10 +48,10 @@
                     <a href="#" class="btn btn-1">Know More</a>
                 </div>
             </section>
-            <section class="container-4">
+            <section class="why-join-cn ">
                 <article>
                     <h3>Why shoud you join</h3>
-                    <div class="cn4-col">
+                    <div class="cn4-col flex-common">
                         <div class="cn4-col-1-3 cn4-col-1">
                             <h2>Network</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores eius eligendi ipsum dicta assumenda eos adipisci eaque consectetur quasi illo necessitatibus ipsa maxime, repellat qui velit ad cupiditate, praesentium suscipit!</p>
@@ -69,10 +67,10 @@
                     </div>
                 </article>
             </section>
-            <section class="container-5">
+            <section class="schedule-cn flex-common">
                 <article class="schedule">
                     <h2>Schedule</h2>
-                    <div class="flex-1">
+                    <div class="flex-1 flex-common">
                         <div class="flex">
                             <h3 class="num-circle circle-1">06 <br>Sept</h3>
                             <h3 class="num-circle">06<br> Sept</h3>
@@ -118,8 +116,8 @@
                     </div>
                 </article>
             </section>
-            <section class="container-6">
-                <div class="count">
+            <section class="counting-cn flex-common">
+                <div class="count flex-common">
                     <div class="cn6-col">
                         <img src="assets/media/microphone.svg">
                         <h3>20+</h3>
@@ -142,7 +140,7 @@
                     </div>
                 </div>
             </section>
-            <section class="container-7">
+            <section class="video-cn flex-common">
                 <div class="img">
                     <img src="assets/media/01.png">
                 </div>
@@ -150,10 +148,10 @@
                     <a href="#"><img src="assets/media/play-button.svg"></a>
                 </div>
             </section>
-            <section class="container-8">
+            <section class="latest-news-cn ">
                 <article class="latest-news">
                     <h2>Our Latest News</h2>
-                    <div class="cn8-col-1-3">
+                    <div class="cn8-col-1-3 flex-common">
                         <div class="cn8-col">
                             <img src="assets/media/08.png">
                             <a href="#" class="head"><h3>How to build great portfolio as a beginer developer</h3></a>
@@ -177,11 +175,11 @@
             </section>
         </main>
         <footer>
-            <div class="foot-head">
+            <div class="foot-head flex-common">
                 <div class="logo">
                     <img src="assets/media/logo.svg">
                 </div>
-                <div class="nav">
+                <div class="nav flex-common">
                     <div class="nav-links">
                         <h3>Quick Links</h3>
                         <nav class="foot-nav">

@@ -76,6 +76,7 @@ General Styling
 
 body{
     font-family: 'Balsamiq Sans', cursive;
+    max-width: 100%;
 
 }
 *,*::before,*::after{
@@ -87,11 +88,12 @@ body{
 
 
 
-.container-1{
+.header-cn{
     display: flex;
     padding: 3%;
     font-size: 20px;
     align-items: baseline;
+
   
    
     
@@ -103,10 +105,20 @@ body{
     color: white;
     
 }
+
+.header i{
+    font-size: 35px;
+    display: none;
+}
+
+.header .toggle{
+    display: none;
+}
 .nav-bar{
     margin-left: auto;
   
 }
+
 .nav-items li a{
     text-decoration: none;
     font-size: 20px;
@@ -136,17 +148,18 @@ Main Part
 
 /*------------Conatiner-2-------------------------*/
 
-.container-2{
+.banner-cn{
  
     height: 37em;
     background:linear-gradient(rgba(68,88,176,0.9),rgba(68,88,176,0.9)),url('../media/01.png');
-    width: 100%;
+  
     position: relative;
-    top: -7em;
+    top: -7.2em;
     z-index: -1;
     width: 100%;
     height: 42rem;
-    
+   width:100%;
+      
 }
 .banner{
   
@@ -159,6 +172,7 @@ Main Part
     padding-bottom: 0%; 
     color: white; 
     line-break: 1.5em;
+    max-width: 100%;
 }
 .bn-col-1{
     flex: 0 1 70%;
@@ -172,7 +186,7 @@ Main Part
     font-size: 50px;
     line-height: 1.4em;
     padding-bottom: 1em;
-    font-weight: 700;
+    font-weight: 600;
     
 }
 .bn-col-1 h1 span{
@@ -198,7 +212,7 @@ Main Part
     cursor: pointer;
 }
 
-.container-2 .cn2-img{
+.banner-cn .cn2-img{
   
     position: absolute;
     background-image: url('../media/01.png');
@@ -211,12 +225,12 @@ Main Part
 /*---------------Container-3---------------------------*/
 
 
-.container-3{
+.abt-event{
     display: flex;
     padding: 3%;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    max-width: 100%;
 
 }
 .cn3-col{
@@ -249,13 +263,13 @@ Main Part
 
 /*----------------Container-4------------------------*/
 
-.container-4{
+.why-join-cn{
     background-color: #DFEBFE;
     padding: 2em;
     width: 100%;
    
 }
-.container-4 h3{
+.why-join-cn h3{
     text-align: center;
     font-size: 45px;
     font-weight: 600;
@@ -306,7 +320,7 @@ Main Part
 
 /*------------------Container-5--------------------*/
 
-.container-5{
+.schedule-cn{
     padding: 3em;
 }
 .flex-1{
@@ -314,7 +328,7 @@ Main Part
     justify-content: space-between;
   
 }
-.container-5 h2{
+.schedule-cn h2{
     text-align: center;
     font-size: 45px;
     padding-bottom: 1em;
@@ -401,7 +415,7 @@ color: white;
 /*----------------------------container-6-----------------------*/
 
 
-.container-6{
+.counting-cn{
     background-color:#DFEBFE;
    padding: 5%;
 }
@@ -435,15 +449,15 @@ text-align: center;
 
 /*-------------Container-7-----------------*/
 
-.container-7{
+.video-cn{
     padding: 5%;
     text-align: center;
 }
-.container-7 .img img{
+.video-cn .img img{
     width:78em;
     border-radius: 1.5em;
 }
-.container-7 .icon{
+.video-cn .icon{
     background-color: white;
     position: relative;
     top: -24em;
@@ -452,7 +466,7 @@ text-align: center;
     border-radius: 50%;
 }
 
-.container-7 .icon img{
+.video-cn .icon img{
     width: 2em;
 }
 
@@ -462,13 +476,13 @@ text-align: center;
 
 
 
-.container-8{
+.latest-news-cn{
     padding: 3%;
     background-color:#DFEBFE ;
 }
 
 
-.container-8 h2{
+.latest-news-cn h2{
     text-align: center;
     font-size: 40px;
     font-weight: 600;
@@ -577,3 +591,62 @@ Footer Part
     background-color: #172F69;
     color: gray;
 }
+
+
+
+/*==================================
+
+Media Queries
+
+===================================*/
+
+
+
+
+@media screen  and (max-width:768px){
+    .flex-common{
+        display: flex;
+        flex-direction: column;
+    }
+    .banner{
+        flex-direction: column-reverse;
+    }
+    main{
+        width: 100%;
+    }
+    .container-2,.container-3{
+        width: 100%;
+    }
+     .nav-bar .nav-items{
+         display: none;
+         position: absolute;
+         background-color: #4E5FB6;
+         left: 0;
+         bottom: 0;
+         top: 0;
+         right: 0;
+         padding:5em ;
+
+
+     }
+
+     
+     #toggle{
+         display: inline-block;
+     }
+    #toggle:checked ~ .nav-bar .nav-items{
+        display: flex;
+    }
+    .nav-items{
+        flex-direction: column;
+    }
+   
+}
+
+
+
+
+
+
+
+
