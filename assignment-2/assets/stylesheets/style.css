@@ -1,0 +1,695 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+    v2.0 | 20110126
+    License: none (public domain)
+*/
+
+
+
+
+
+
+
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/*=========================================
+
+Custom Styles
+
+==========================================*/
+
+
+
+/*-------------------General Styles-----------------------*/
+
+
+:root{
+    --btn-color:#F7434D;
+}
+
+
+body{
+    font-family: 'Balsamiq Sans', cursive;
+   font-size: 16px;
+}
+
+
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+
+
+/*----------Header Part--------------------*/
+
+
+.container{
+    max-width: 1250px;
+   margin: 0 auto;
+  padding: .6em 1.5em;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+#toggle{
+    display: none;
+}
+
+label{
+    display: none;
+}
+
+
+.header-cn .nav-item{
+    padding-left: 1em;
+    
+}
+.header-cn .nav-item a{
+    text-decoration: none;
+    font-size: 1.2em;
+    color: white;
+    text-transform: uppercase;
+}
+
+
+.header-cn .nav-item:nth-child(5){
+    background-color:var(--btn-color);
+    padding: 1em 2em;
+    border-radius: 5px;
+    margin-left: .7em;
+}
+
+.header-cn .logo{
+    font-size: 2.5em;
+    text-decoration: none;
+    color: white;
+    
+}
+
+/*-----------Banner Section---------------------*/
+
+
+.banner{
+    background:linear-gradient(rgba(68,88,176,0.9),rgba(68,88,176,0.9)),url('../media/01.png');
+    position: relative;
+    top: -7.7em;
+    color: white;
+    z-index: -1;
+    height: 46em;
+}
+
+
+
+.bn-con{
+    position: relative;
+    top:11em;
+    
+}
+
+.info-col{
+    flex: 0 1 65%;
+    
+}
+.img-col{
+    flex: 0 1 35%;
+    padding-right: 7em;
+  
+
+}
+
+.info-col h1{
+    font-size: 3.1em;
+    line-height: 1.4em;
+    padding-bottom: .8em;
+    font-weight: 600;
+
+}
+.info-col h1 span{
+    padding-left: .3em;
+    color:var(--btn-color);
+}
+
+.info-col p{
+    font-size: 1.3em;
+    line-height: 1.5em;
+
+}
+
+.btn{
+    background-color: var(--btn-color);
+    text-decoration: none;
+    color: white;
+    padding: 1.1em 2.6em;
+    display: inline-block;
+    margin-top: 1.3em;
+    border-radius: 3px;
+    font-size: 20px;
+  
+}
+
+/*------------ ABout the event section------------------------*/
+
+
+.abt-event h2{
+    font-size: 3em;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-bottom: .5em;
+}
+
+.abt-event p{
+    color: gray;
+}
+
+
+/*-----------------------Why Join us Section---------------------------------*/
+
+.why-join-cn{
+    background-color: #DFEBFE;
+    padding: 2em;
+    width: 100%;
+   
+}
+.why-join-cn h3{
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: 600;
+    padding-bottom: 1em;
+}
+.join-con-col h2{
+    font-size:2em;
+    padding-bottom: .5em;
+    font-weight: 600;
+}
+.join-con-col p{
+    color: gray;
+}
+
+.join-con-col{
+    flex: 0 1 31%;
+    padding: 1em;
+    border: 2px dashed red;
+    margin-right: 1em;
+}
+
+.join-con-col::before{
+   
+    background-color:#DFEBFE;
+    position: relative;
+    top: -1em;
+    left: .5em;
+    font-size: 35px;
+    padding: .2em;
+    color: #F7434D;
+}
+.join-col-1::before{
+    content: '1';
+}
+.join-col-2::before{
+    content: '2';
+}
+.join-col-3::before{
+    content: '3';
+}
+
+
+
+/*----------------------- Schedule Section-----------------------*/
+
+.schedule{
+    position: relative;
+}
+.schedule img{
+width: 10em;
+
+}
+
+.schedule h2{
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: 600;
+    padding: 1em 0;
+}
+
+.shdl-row-col-1{
+    flex: 0 1 15%;
+   margin-bottom: .8em;
+}
+
+.shdl-row-col-2{
+    flex: 0 1 20%;
+    margin-bottom: 2.4em;
+}
+
+.shdl-row-col-3{
+    flex: 0 1 65%;
+    margin-bottom: 2.4em;
+}
+
+.shdl-row-col-1 .circle-1{
+    background-color: var(--btn-color);
+   color: white;
+
+}
+.shdl-row-col-1 .num-circle{
+  
+    color: var(--btn-color);
+    font-weight: 600;
+  padding: 2.4em;
+  margin-bottom: 2em;
+   text-align: center;
+    border-radius: 50%;
+   background-color: white;
+    border: 2px dashed var(--btn-color);
+    z-index: 1;
+    
+}
+.shdl-row-col-1 .circle-1{
+    background-color: var(--btn-color);
+}
+.shdl-row-col-3 h3{
+    font-size: 1.5em;
+    font-weight: 600;
+    padding-bottom: .5em;
+}
+.shdl-row-col-3 p{
+    font-size: 1em;
+    color:gray;
+}
+
+.schedule-btn{
+    text-align: center;
+    position: relative;
+    left: -2.5em;
+    top: -2em;
+}
+
+hr{
+    width: 30em;
+    border: 2px dashed var(--btn-color);
+    transform: rotate(90deg);
+    transform-origin: left;
+   position: absolute;
+    top: 12em;
+    left: 8em;
+    
+  
+
+  
+}
+
+
+/*--------------Counting section=--------------------*/
+
+.counting{
+    background-color:#DFEBFE;
+   
+}
+.counting img{
+    width: 6em;
+}
+
+
+.coun-col{
+text-align: center;
+}
+.coun-col h3{
+    font-size: 35px;
+    font-weight: 700;
+    padding: .5em 0 .8em 0;
+}
+.coun-col h4{
+    font-size: 27px;
+}
+.coun-col-2{
+    background-color: var(--btn-color);
+    padding: 1.5em 5em;
+    border-radius:.7em;
+    color: white;
+}
+
+
+/*-------------Video section--------------------*/
+
+.link{
+    text-align: center;
+    justify-content: center;
+  align-items: center;
+  margin-top: 3em;
+}
+.link iframe{
+    width: 80em;
+    height: 40em;
+    border-radius: 1em;
+}
+
+
+/*---------------Lastest News Section---------------------*/
+
+
+.news-con{
+  
+    background-color:#DFEBFE ;
+    padding: 2em;
+}
+
+
+.news-con h2{
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 600;
+    padding-bottom: .8em;
+}
+
+
+.img img{
+    width:100%
+}
+
+.news-col{
+    flex: 0 1 30%;
+}
+
+.news-col-1{
+    padding-right: 1.5em;
+}
+.news-col-3{
+    padding-left: 1.5em;
+}
+
+.news-col .head{
+    font-size: 1.4em;
+    font-weight: 600;
+    margin: .5em 0 .5em 0;
+    display: inline-block;
+    text-decoration: none;
+    line-height: 1.3em;
+    color: black;
+}
+.news-col p{
+    font-size: 1.1em;
+    color: gray;
+    padding: .2em 0em;
+}
+
+.news-col .news-btn{
+    font-size: 1.6em;
+    color: black;
+    padding: .8em 0 0 0;   
+    display: inline-block;
+}
+.news-col .news-btn-2{
+    color: var(--btn-color);
+}
+
+
+/*------------------Footer Part-----------------------*/
+
+
+
+
+.foot-head{
+    background-color: #23387B;
+    display: flex;
+    justify-content: space-between;
+    padding: 4em;
+    color: white;
+  
+}
+.icon-logo i{
+   font-size: 30px;
+}
+.icon-logo a{
+    text-decoration:none;
+    color: #BCC0D2;
+}
+
+.logo{
+    flex-basis: 30%;
+}
+.icon-logo{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1.5em;
+}
+.nav{
+    display: flex;
+   
+    flex-basis: 67%;
+}
+
+
+.nav-links h3{
+    font-size: 30px;
+    padding-bottom: .8em;
+}
+
+.nav-links{
+    padding-right: 5em;
+}
+
+.foot-nav-items{
+    display: flex;
+  
+}
+.foot-nav-items a{
+    padding-right: .9em;
+    text-decoration:none;
+    color: lightgray;
+    font-size: 18px;
+}
+
+.footer{
+    text-align: center;
+    padding: 2em;
+    font-size: 20px;
+    background-color: #172F69;
+    color: gray;
+}
+
+
+
+
+/*========================================
+
+Media Query
+
+========================================*/
+
+@media screen and (max-width:768px){
+    html{
+        font-size: 14px;
+    }
+
+
+    .container {
+        padding: 1em 2em;
+        text-align: center;
+    }
+
+    .flex-col {
+        display: flex;
+        flex-flow: column wrap;
+      
+    }
+    .main-nav{
+        display: none;
+    }
+
+    .bar{
+        display: inline-block;
+        font-size: 2em;
+        color: white;
+    }
+
+
+    .banner{
+         height:75em;
+    }
+    .banner .img-col{
+      position: relative;
+      left: 4em;
+      margin-bottom: 1em;
+    }
+
+    .bnr-btn{
+        position: relative;
+        
+        display: inline-block;
+    }
+    .wrap-reverse{
+        
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+    }
+
+    
+    .abt-event{
+        padding: 0 3em 1em 3em;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        
+    }
+    
+    .abt-event .img-col{
+      position: relative;
+      left: 4em;
+      padding-bottom: 1em;
+    }
+    
+    .abt-event .btn-1{
+        position: relative;
+        left: -1em;
+    }
+
+    .why-join-cn .join-con-col{
+        margin-bottom: 2em;
+    }
+    .why-join-cn{
+        padding: 3em 8em;
+    }
+     
+   
+    .dashed-line{
+        display: none;
+    }
+    .btn-3{
+        position: relative;
+        left: 2em;
+    }
+    .counting .coun-col{
+        margin-bottom: 2.5em;
+        box-shadow: .05em .05em 2em .05em lightgray;
+        padding: 5em 8em;
+    }
+
+    .schedule-con-row{
+        padding: 2em 4em;
+        box-shadow: .05em .05em 2em lightgray;
+        margin-bottom: 1em;
+    }
+    .video-con iframe{
+        padding: 5em 1em;
+    }
+    
+    .news-col{
+        margin-bottom: 2em;
+        text-align: start;
+        padding: 1em 3em;
+        box-shadow: .05em .05em 2em lightgray;
+    }
+
+    .nav-links{
+       align-items: center;
+        margin:2em;
+       padding-left: 5em;
+    }
+
+    .foot-nav-items li{
+        padding-left: 2em;
+        padding-bottom: 1em;
+    }
+     
+    
+    #toggle:checked ~ .main-nav {
+        display: inline-block;
+       
+       
+    }
+
+   
+    .logo{
+        z-index: 2;
+    }
+    .bar{
+        z-index: 2;
+        
+    }
+    .main-nav .nav-items{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top:0;
+        bottom:0;
+        left: 0;
+        right: 0;
+        background:rgba(0,0,0,0.9);
+        
+    }
+    .main-nav .nav-items li{
+        padding-bottom: 2em;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
