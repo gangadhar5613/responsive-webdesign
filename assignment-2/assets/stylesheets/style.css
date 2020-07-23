@@ -662,7 +662,10 @@ Media Query
         
        
     }
-
+     
+    .foot-head .logo{
+        padding-bottom: 1.5em;
+    }
     .foot-nav-items li{
        padding-right: 0;
         padding-bottom: 1em;
