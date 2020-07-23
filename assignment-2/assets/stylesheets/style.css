@@ -150,7 +150,7 @@ label{
 .banner{
     background:linear-gradient(rgba(68,88,176,0.9),rgba(68,88,176,0.9)),url('../media/01.png');
     position: relative;
-    top: -7.7em;
+    top: -180px;
     color: white;
     z-index: -1;
     height: 46em;
@@ -252,7 +252,7 @@ label{
     flex: 0 1 31%;
     padding: 1em;
     border: 2px dashed red;
-    margin-right: 1em;
+  
 
 }
 
@@ -296,17 +296,17 @@ width: 10em;
 }
 
 .shdl-row-col-1{
-    flex: 0 1 15%;
+    flex: 0 1 auto;
    margin-bottom: .8em;
 }
 
 .shdl-row-col-2{
-    flex: 0 1 20%;
+    flex: 0 1 12%;
     margin-bottom: 2.4em;
 }
 
 .shdl-row-col-3{
-    flex: 0 1 65%;
+    flex: 0 1 60%;
     margin-bottom: 2.4em;
 }
 
@@ -351,8 +351,8 @@ hr{
     transform: rotate(90deg);
     transform-origin: left;
    position: absolute;
-    top: 12em;
-    left: 8em;
+    top: 20%;
+    left: 10%;
     
   
 
@@ -373,8 +373,8 @@ hr{
 
 .coun-col{
 text-align: center;
-flex:0 1 22%;
-padding: 2rem;
+flex:0 1 18%;
+padding: 1rem;
 border-radius:.7em;
 }
 .coun-col h3{
@@ -489,9 +489,7 @@ border-radius:.7em;
     color: #BCC0D2;
 }
 
-.logo{
-    flex-basis: 30%;
-}
+
 .icon-logo{
     display: flex;
     justify-content: space-between;
@@ -503,6 +501,12 @@ border-radius:.7em;
     flex-basis: 67%;
 }
 
+
+.icons h3{
+    font-size:2em;
+    margin-top: 1em;
+    
+}
 
 .nav-links h3{
     font-size: 30px;
@@ -557,7 +561,8 @@ Media Query
     }
 
     .banner .img-col{
-        padding-right: 0;
+        padding-left: 0;
+        margin-bottom: 1em;
     }
     .flex-col {
         display: flex;
@@ -578,10 +583,7 @@ Media Query
     .banner{
          height:70rem;
     }
-    .banner .img-col{
-      
-      margin-bottom: 1em;
-    }
+   
 
     .bnr-btn{
        position: relative;
@@ -604,7 +606,7 @@ Media Query
         
     }
     
-    .abt-event .img-col{
+    .abt-event .abt-img-col{
      padding-right: 0;
       padding-bottom: 1em;
     }
@@ -629,11 +631,14 @@ Media Query
     .counting .coun-col{
         margin-bottom: 2.5em;
         box-shadow: .05em .05em 2em .05em lightgray;
-        padding: 5em 4em;
+       
     }
 
+    .coun-col img{
+        width: 30%;
+    }
     .schedule-con-row{
-        padding: 2em 4em;
+        padding: 2em;
         box-shadow: .05em .05em 2em lightgray;
         margin-bottom: 1em;
     }
@@ -644,31 +649,40 @@ Media Query
     .news-col{
         margin-bottom: 2em;
         text-align: start;
-        padding: 1em 3em;
+        padding: 1em;
         box-shadow: .05em .05em 2em lightgray;
     }
 
     .nav-links{
        align-items: center;
-        margin:2em;
-       padding-left: 5em;
+       padding-right: 0;
+       text-align: center;
+        
+       
     }
 
     .foot-nav-items li{
-        padding-left: 2em;
+       padding-right: 0;
         padding-bottom: 1em;
     }
      
     
     #toggle:checked ~ .main-nav {
         display: inline-block;
+        position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+     right: 0;
        
        
     }
 
    
-    .logo{
+    .header-cn .logo{
         z-index: 2;
+        font-size: 2em;
+        
     }
     .bar{
         z-index: 2;
