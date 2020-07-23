@@ -89,7 +89,9 @@ body{
     box-sizing: border-box;
 }
 
-
+img{
+    width: 100%;
+}
 
 /*----------Header Part--------------------*/
 
@@ -223,7 +225,7 @@ label{
 .why-join-cn{
     background-color: #DFEBFE;
     padding: 2em;
-    width: 100%;
+   
    
 }
 .why-join-cn h3{
@@ -543,6 +545,13 @@ Media Query
         text-align: center;
     }
 
+    .banner .info-col{
+        font-size: .8rem;
+    }
+
+    .banner .img-col{
+        padding-right: 0;
+    }
     .flex-col {
         display: flex;
         flex-flow: column wrap;
@@ -560,16 +569,15 @@ Media Query
 
 
     .banner{
-         height:75em;
+         height:70rem;
     }
     .banner .img-col{
-      position: relative;
-      left: 4em;
+      
       margin-bottom: 1em;
     }
 
     .bnr-btn{
-        position: relative;
+       position: relative;
         
         display: inline-block;
     }
@@ -582,7 +590,7 @@ Media Query
 
     
     .abt-event{
-        padding: 0 3em 1em 3em;
+       
         align-items: center;
         text-align: center;
         justify-content: center;
@@ -590,21 +598,17 @@ Media Query
     }
     
     .abt-event .img-col{
-      position: relative;
-      left: 4em;
+     padding-right: 0;
       padding-bottom: 1em;
     }
+   
     
-    .abt-event .btn-1{
-        position: relative;
-        left: -1em;
-    }
 
     .why-join-cn .join-con-col{
         margin-bottom: 2em;
     }
     .why-join-cn{
-        padding: 3em 8em;
+        padding: 2em 1em;
     }
      
    
@@ -618,7 +622,7 @@ Media Query
     .counting .coun-col{
         margin-bottom: 2.5em;
         box-shadow: .05em .05em 2em .05em lightgray;
-        padding: 5em 8em;
+        padding: 5em 4em;
     }
 
     .schedule-con-row{
